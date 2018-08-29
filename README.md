@@ -3,6 +3,15 @@
 npm install log4js@^2.5 --save
 :
 
+log4jsの機能。
+    DateRollingFileLogAppender: {
+      type: "dateFile",
+      filename: path.join(ROOT, "./log/access/access.log"),
+      pattern: "-yyyyMMdd",
+      daysToKeep: 30
+    }
+こんな指定で、指定日付までのログを自動保持してくれる便利機能。
+
 実行環境：
 windows
 VisualStudioCode
